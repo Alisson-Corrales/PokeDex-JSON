@@ -12,24 +12,24 @@
 
 #### OverView
 
-- >Abilities will go under Basic
-- >
+>Abilities will go under Basic
+
 
 
 #### Day 1
 
 ##### >4/9/2021
 
-- >Created a wireframe
-- >Created Universal HTML
-- >Found images for the project
-- >Understanding what and how to complete project
-- >Started on Js 
+>Created a wireframe
+>Created Universal HTML
+>Found images for the project
+>Understanding what and how to complete project
+>Started on Js 
 
 
 
 ##### Credits
 
-- >Charmeleon Image(https://w7.pngwing.com/pngs/24/646/png-transparent-charmeleon-pokemon-go-drawing-charmander-pokemon-go-mammal-carnivoran-dragon.png) 
+>Charmeleon Image(https://w7.pngwing.com/pngs/24/646/png-transparent-charmeleon-pokemon-go-drawing-charmander-pokemon-go-mammal-carnivoran-dragon.png) 
 
-- >
+>
