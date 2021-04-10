@@ -20,11 +20,11 @@
 
 ##### 4/9/2021
 
->Created a wireframe
->Created Universal HTML
->Found images for the project
->Understanding what and how to complete project
->Started on Js 
+- >Created a wireframe
+- >Created Universal HTML
+- >Found images for the project
+- >Understanding what and how to complete project
+- >Started on Js 
 
 
 
