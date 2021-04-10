@@ -30,5 +30,5 @@
 
 ##### Credits
 
->Charmeleon Image(https://w7.pngwing.com/pngs/24/646/png-transparent-charmeleon-pokemon-go-drawing-charmander-pokemon-go-mammal-carnivoran-dragon.png) 
+>[Charmeleon Image](https://w7.pngwing.com/pngs/24/646/png-transparent-charmeleon-pokemon-go-drawing-charmander-pokemon-go-mammal-carnivoran-dragon.png) 
 
