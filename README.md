@@ -18,7 +18,7 @@
 
 #### Day 1
 
-##### >4/9/2021
+##### 4/9/2021
 
 >Created a wireframe
 >Created Universal HTML
