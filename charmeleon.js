@@ -68,4 +68,21 @@ let charmeleon =
     "weight": 190
 }`
 
+let charmeleonObj = JSON.pars(charmeleon);
+let sectionLeft = document.getElementById("sectionLeft");
+
+createLeftSection(charmeleonObj);
+
+function createLeftSection() {
+    //The Figuer will take the image
+    //The figcaption will contain it name
+    //The article will hold it togeter 
+    //The article will get append to the section
+    const ARTICLE = document.createElement("article");
+    const FIGUER = document.createElement("figure");
+    const IMG = document.createElement("img");
+    const FIGCAPTION = document.createElement("figcaption");
+
+
+}
 
