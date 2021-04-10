@@ -1,8 +1,8 @@
 "use strict";
 
 
-
-let charmander = {"abilities": [
+//🔥this holds everything🔥 
+let charmander = `{"abilities": [
       {
         "name": "blaze"
       },
@@ -68,4 +68,32 @@ let charmander = {"abilities": [
         }
       }
     ],
-    "weight": 85}
+"weight": 85}`
+
+
+//🔥gets all the elements in the html🔥
+let grid = document.getElementById("grid");
+let imgName = document.getElementById("imageAndName");
+let desc = document.getElementById("description");
+let links = document.getElementById("links");
+//turns charmander array into sometihng we can easily output
+let charms = JSON.parse(charmander)
+
+createImgName(charms);
+createDesc(charms);
+createLinks(charms);
+
+function createImgName(obj){
+    const H1 = document.createElement("h1")
+    H1.textContent = obj.name;
+    imgName.appendChild(H1)
+}
+//grabs values that are in the array and puts them in the descript. box
+//should change based on different
+function createDesc(obj){}
+
+function createLinks(obj){}
+
+//let file = window.location.pathname
+//file = /charmander.html - except you splice our the / and .html
+//file += .json
