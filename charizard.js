@@ -1,3 +1,4 @@
+//Charizard
 let input = `{
     "abilities": [
         {
@@ -73,72 +74,182 @@ let input = `{
     "weight": 905
 }`
 
+//Charmander
+let input2 = `{
+    "abilities": [
+      {
+        "name": "blaze"
+      },
+      {
+        "name": "solar-power"
+      }
+    ],
+    "base_experience": 62,
+    "height": 6,
+    "id": 4,
+    "is_default": true,
+    "name": "charmander",
+    "order": 5,
+    "stats": [
+      {
+        "base_stat": 39,
+        "effort": 0,
+        "stat": {
+          "name": "hp"
+        }
+      },
+      {
+        "base_stat": 52,
+        "effort": 0,
+        "stat": {
+          "name": "attack"
+        }
+      },
+      {
+        "base_stat": 43,
+        "effort": 0,
+        "stat": {
+          "name": "defense"
+        }
+      },
+      {
+        "base_stat": 60,
+        "effort": 0,
+        "stat": {
+          "name": "special-attack"
+        }
+      },
+      {
+        "base_stat": 50,
+        "effort": 0,
+        "stat": {
+          "name": "special-defense"
+        }
+      },
+      {
+        "base_stat": 65,
+        "effort": 1,
+        "stat": {
+          "name": "speed"
+        }
+      }
+    ],
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "fire"
+        }
+      }
+    ],
+    "weight": 85
+    }`
+
+//Charmeleon
+let input3 = `{
+    "abilities": [
+      {
+        "name": "blaze"
+      },
+      {
+        "name": "solar-power"
+      }
+    ],
+    "base_experience": 142,
+    "height": 11,
+    "id": 5,
+    "is_default": true,
+    "name": "charmeleon",
+    "order": 6,
+    "stats": [
+      {
+        "base_stat": 58,
+        "effort": 0,
+        "stat": {
+          "name": "hp"
+        }
+      },
+      {
+        "base_stat": 64,
+        "effort": 0,
+        "stat": {
+          "name": "attack"
+        }
+      },
+      {
+        "base_stat": 58,
+        "effort": 0,
+        "stat": {
+          "name": "defense"
+        }
+      },
+      {
+        "base_stat": 80,
+        "effort": 1,
+        "stat": {
+          "name": "special-attack"
+        }
+      },
+      {
+        "base_stat": 65,
+        "effort": 0,
+        "stat": {
+          "name": "special-defense"
+        }
+      },
+      {
+        "base_stat": 80,
+        "effort": 1,
+        "stat": {
+          "name": "speed"
+        }
+      }
+    ],
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "fire"
+        }
+      }
+    ],
+    "weight": 190
+    }`
+
 let container = document.getElementById("grid")
-let images = document.getElementById("imageAndName")
+let name = document.getElementById("imageAndName")
 let paragraph = document.getElementById("description")
 let link = document.getElementById("links")
 
-let charizard = JSON.parse(input)
+let charizard = JSON.parse(input2)
 
 createContainer(charizard);
-createImages(charizard);
+createName(charizard);
 createParagraph(charizard);
 createLink(charizard);
 
 
 function createContainer(obj) {
-    const CONT = document.createElement("")
+    const CONT = document.createElement("section");
+
+    
 }
 
-function createImages(obj) {
-    const 
+function createName(obj) {
+    const NAME = document.createElement("h1");
+
+    NAME.textContent = `${obj["name"]}`
+    imageAndName.appendChild(NAME)
 }
 
 function createParagraph(obj) {
-    const 
+    const PARA = document.createElement("p");
+
+    PARA.textContent = `Base Experience: ${obj["base_experience"]}, ID: ${obj["id"]}, Height: ${obj["height"]}`
+    imageAndName.appendChild(PARA)
 }
 
 function createLink(obj) {
-    const 
+    const LINKS = document.createElement("a");
 }
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//These go into section 1
-//Picture section
-//image tag
 
-
-//name section
-//h1 tag
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//These go into the second section
-
-//description
-//paragraph tag
-
-
-//Basic section
-//parapgraph tag with id "basic"
-
-
-//Stats section
-//paragraph tag with id "stats"
-
-
-//types section
-//parapgraph tag with id "types"
-
-
-//Link to other charmander evolution
-// image tag
-
-
-//link to charmeleon evolution
-//image tag
-
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
