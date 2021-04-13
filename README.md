@@ -1,9 +1,13 @@
 # PokeDex-JSON
 
 ## Discription
+
 > This project is to test our abilities to use JSON
+
 > We will create a website using JavaScript, HTML, SCSS
+
 > We want to make the PokeDex look like an actual PokeDex
+
 > Most of the HTML present on the pages [^excluding the landing page] will be made with JS
 
 #### Features
@@ -14,13 +18,19 @@
 #### What will the JS file do?
 
 > This file will containe all 3 inputs that with the information for the following pokemon
+    
     - Charmander
+    
     - Charmeleon
+    
     - Charizard
 
 > There will be multiple functions, such as
+    
     - createContainer() which will create a section where to hold the information and later formated with SCSS
+    
     - createName() will take the name from the JSON string and append it to the section
+    
     - createParagraph() will take discription of the pokemon and append it to the section
 
 
