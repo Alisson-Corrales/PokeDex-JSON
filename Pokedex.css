@@ -1,6 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .navbar{
     background-color: red;
     color: black;
     border-bottom: 0.5px solid grey;
     width: 100%;
+    line-height: 80px;
+    height: 80px;
+    font-size: 25px;
+    padding: 0 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
 }
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
+.navbar a.nav.logo{
+    float: left;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar ul{
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 50px;
+}
+.navbar ul li{
+    display: inline-block;
+}
+
+.navbarul li a{
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 0 30px;
+}
+
+.navbar ul li a:hover{
+    background-color: red;
+}
+
+body{
+    background-color: black;
+}
+
+.content{
+    color: red;
+    margin-top: 10%;
+    margin-left: 100px;
+    font-family: 'Lobster', cursive;
+    font-size: 100px;
+}
+
+h1{
+    font-size: 70px;
+}
+
+p{
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.btns{
+    margin-top: 20px;
+    background: white;
+    cursor: pointer;
+    color: black;
+    padding: 12px 20px;
+    float: left;
+    border: 0;
+    border-radius: 200px;
+    margin-left: 10px;
+}
+
+.btns:hover{
+    background: red;
+}
+
+img{
+    margin-top: -200px;
+    margin-left: 700px;
+    width: 700px;
+    filter: grayscale(1);
+}
+
+img:hover{
+    filter: grayscale(0);
+    transition: 3s;
+    cursor: pointer;
+}
+
+
+
+
+
