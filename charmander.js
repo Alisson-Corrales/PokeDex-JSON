@@ -14,7 +14,7 @@ let charmander = `{"abilities": [
     "height": 6,
     "id": 4,
     "is_default": true,
-    "name": "charmander",
+    "name": "Charmander",
     "order": 5,
     "stats": [
       {
@@ -72,28 +72,112 @@ let charmander = `{"abilities": [
 
 
 //🔥gets all the elements in the html🔥
-let grid = document.getElementById("grid");
+//let grid = document.getElementById("grid");
 let imgName = document.getElementById("imageAndName");
-let desc = document.getElementById("description");
+let section = document.getElementById("description")
 let links = document.getElementById("links");
 //turns charmander array into sometihng we can easily output
 let charms = JSON.parse(charmander)
 
-createImgName(charms);
-createDesc(charms);
-createLinks(charms);
 
+createImgName(charms);
+createGen(charms);
+createStats(charms);
+createAble(charms);
+createTypes(charms);
+
+
+//✧･ﾟ: *✧･ﾟ:* 🔥 *:･ﾟ✧*:･ﾟ✧//
+
+
+//🔥 makes the image and the name🔥 
 function createImgName(obj){
     const H1 = document.createElement("h1")
     H1.textContent = obj.name;
     imgName.appendChild(H1)
 }
-//grabs values that are in the array and puts them in the descript. box
-//should change based on different
-function createDesc(obj){}
 
-function createLinks(obj){}
+//🔥 grabs values that are in the array and puts them in the descript. box
+//should change based on different buttons 🔥 
+function createGen(obj){
+  //🔥 makes the article where everything goees and p1🔥 
+  const ARTICLE = document.createElement("article");
+  const P1 = document.createElement("p");
+  ARTICLE.appendChild(P1)
+  
+  const ABILITIES = obj["abilities"];
+  for(let a in ABILITIES){
+    const ITEMS = document.createElement("li");
+    ITEMS.textContent = ABILITIES[a]["name"];
+    P1.textContent = `Abilities:`;
+    ARTICLE.appendChild(ITEMS)
+  }
+  section.appendChild(ARTICLE)
+}
+function createStats(obj){
+  //🔥 makes the article where everything goees and p1🔥 
+  const ARTICLE = document.createElement("article");
+  const P1 = document.createElement("p");
+  ARTICLE.appendChild(P1)
+  
+  const STATS = obj["stats"];
+  for(let s in STATS){
+    const ITEMS = document.createElement("li");
+    ITEMS.textContent = STATS[s]["base_stat"];
+    P1.textContent = `Stats:`
+    ARTICLE.appendChild(ITEMS)
+  }
+  section.appendChild(ARTICLE)
+}
+function createAble(obj){
+  //🔥 makes the article where everything goees and p1🔥 
+  const ARTICLE = document.createElement("article");
+  const P1 = document.createElement("p");
+  ARTICLE.appendChild(P1)
+  
+  const ABILITIES = obj["abilities"];
+  for(let a in ABILITIES){
+    const ITEMS = document.createElement("li");
+    ITEMS.textContent = ABILITIES[a]["name"];
+    P1.textContent = `Abilities:`;
+    ARTICLE.appendChild(ITEMS)
+  }
+  section.appendChild(ARTICLE)
+}
+function createTypes(obj){
+  //🔥 makes the article where everything goees and p1🔥 
+  const ARTICLE = document.createElement("article");
+  const P1 = document.createElement("p");
+  ARTICLE.appendChild(P1)
+  
+  const ABILITIES = obj["abilities"];
+  for(let a in ABILITIES){
+    const ITEMS = document.createElement("li");
+    ITEMS.textContent = ABILITIES[a]["name"];
+    P1.textContent = `Abilities:`;
+    ARTICLE.appendChild(ITEMS)
+  }
+  section.appendChild(ARTICLE)
+}
+
+
+//🔥 this is what makes the text box cahnges between topics🔥 
+  const BUTTON1 = document.getElementById("general")
+  const BUTTON2 = document.getElementById("stats")
+  const BUTTON3 = document.getElementById("abilites")
+  const BUTTON4 = document.getElementById("types")
+
+  BUTTON1.textContent = "general";
+  BUTTON2.textContent = "abilities";
+  BUTTON3.textContent = "stats";
+  BUTTON4.textContent = "types";
+
 
 //let file = window.location.pathname
 //file = /charmander.html - except you splice our the / and .html
 //file += .json
+
+//TO DO LIST
+//* make a function for every button 0/4
+//* make a new article for each one, if you click one button, it erases the current article 0/4
+//* make time for scss
