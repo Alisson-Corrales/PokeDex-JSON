@@ -53,7 +53,7 @@ ________________________________________________________________________________
 
 #### 4/13/2021
 
-> - Created landing page and coreseponding CSS
+> - Created landing page and corresponding CSS
 
 
 
