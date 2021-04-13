@@ -32,9 +32,7 @@
     - createName() will take the name from the JSON string and append it to the section
     
     - createParagraph() will take discription of the pokemon and append it to the section
-
 ______________________________________________________________________________________________________
-
 #### Day 1
 
 ##### 4/9/2021
@@ -45,11 +43,11 @@ ________________________________________________________________________________
 >
 > - Found images for the project
 >
-> -Understanding what and how to complete project
+> - Understanding what and how to complete project
 >
-> -Started on Js 
+> - Started on Js 
 >
-> -Added content to the README.md file
+> - Added content to the README.md file
 
 #### Day 2
 
