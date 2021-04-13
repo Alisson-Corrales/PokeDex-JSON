@@ -3,11 +3,11 @@
 ## Discription
 
 > This project is to test our abilities to use JSON
-
+>
 > We will create a website using JavaScript, HTML, SCSS
-
+>
 > We want to make the PokeDex look like an actual PokeDex
-
+>
 > Most of the HTML present on the pages [^excluding the landing page] will be made with JS
 
 #### Features
@@ -33,21 +33,29 @@
     
     - createParagraph() will take discription of the pokemon and append it to the section
 
-
+______________________________________________________________________________________________________
 
 #### Day 1
 
 ##### 4/9/2021
 
-- >Created a wireframe
-- >Created Universal HTML
-- >Found images for the project
-- >Understanding what and how to complete project
-- >Started on Js 
+> - Created a wireframe
+>
+> - Created Universal HTML
+>
+> - Found images for the project
+>
+> -Understanding what and how to complete project
+>
+> -Started on Js 
+>
+> -Added content to the README.md file
 
 #### Day 2
 
 #### 4/13/2021
+
+> - Created landing page and coreseponding CSS
 
 
 
