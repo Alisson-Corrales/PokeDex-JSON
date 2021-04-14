@@ -145,7 +145,7 @@ let input2 = `{
     "weight": 85
     }`
 
-//Charmeleon
+//Charmeleon for c
 let input3 = `{
     "abilities": [
       {
@@ -216,40 +216,88 @@ let input3 = `{
     "weight": 190
     }`
 
+
+
 let container = document.getElementById("grid")
 let name = document.getElementById("imageAndName")
+
 let paragraph = document.getElementById("description")
+let basic = document.getElementById("basic")
+
+let stats = document.getElementById("stats")
+
 let link = document.getElementById("links")
 
-let charizard = JSON.parse(input2)
+let charizard = JSON.parse(input)
 
+//Basic Info
 createContainer(charizard);
 createName(charizard);
 createParagraph(charizard);
 createLink(charizard);
 
 
+//Functions to create basic info
 function createContainer(obj) {
     const CONT = document.createElement("section");
 
     
 }
-
 function createName(obj) {
     const NAME = document.createElement("h1");
 
     NAME.textContent = `${obj["name"]}`
     imageAndName.appendChild(NAME)
 }
-
 function createParagraph(obj) {
     const PARA = document.createElement("p");
 
     PARA.textContent = `Base Experience: ${obj["base_experience"]}, ID: ${obj["id"]}, Height: ${obj["height"]}`
     imageAndName.appendChild(PARA)
 }
-
 function createLink(obj) {
     const LINKS = document.createElement("a");
 }
 
+//Stats info
+createStats(charizard);
+
+function createStats(obj){
+  //STATS stores a array of every stats on a data base
+  const STATS = obj["stats"];
+  for(stats in STATS) {
+      //Ilnitialized all of the HTML elements we are going to need for each stats
+      const ARTICLE = document.createElement("artticle")
+      const H2 = document.createElement("h2")
+      const P1 = document.createElement("p")
+      const P2 = document.createElement("p")
+      const P3 = document.createElement("p")
+      const LIST = document.createElement("ul")
+
+      //Puts the 
+      H2.textContent = STATS[stats]["name"];
+      P1.textContent = `Base Stat: ${STATS[stats]["base_stat"]}`
+      P2.textContent = `Efffort: ${STATS[stats]["effort"]}`
+      P3.textContent = `Stats:`
+
+      //Loop throgu hall of the powers and add them to the list
+
+
+      const POWERS = STATS[stats]["stats"];
+      for (power in POWERS) {
+          const ITEM = document.createElement("li");
+          ITEM.textContent = POWERS[power];
+          LIST.appendChild(ITEM);
+      }
+ //adds the lst to the articles
+      ARTICLE.appendChild(H2)
+      ARTICLE.appendChild(P1)
+      ARTICLE.appendChild(P2)
+      ARTICLE.appendChild(P3)
+      ARTICLE.appendChild(LIST)
+
+      //Adds the article to the html
+      stats.appendChild(ARTICLE)
+  }
+}
+//Functions to create the stats area
