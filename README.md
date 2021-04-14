@@ -8,7 +8,7 @@
 >
 > We want to make the PokeDex look like an actual PokeDex
 >
-> Most of the HTML present on the pages [^excluding the landing page] will be made with JS
+> Most of the HTML present on the pages (excluding the landing page) will be made with JS
 
 #### Features
 
@@ -58,19 +58,19 @@ ________________________________________________________________________________
 
 > - Created landing page and corresponding CSS
 
+___________________________________________________________________________________________
 
+### Credits
 
-
-##### Credits
-
+> ##### Image Links
 > [Charmeleon Image](https://w7.pngwing.com/pngs/24/646/png-transparent-charmeleon-pokemon-go-drawing-charmander-pokemon-go-mammal-carnivoran-dragon.png) 
 >
 
 #### Creators
 
-> Alisson Corrales
+> Alisson 
 >
-> Samuel Dobos
+> Samuel 
 >
 > Daniel 
 >
