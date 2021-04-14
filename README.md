@@ -33,6 +33,9 @@
     
     - createParagraph() will take discription of the pokemon and append it to the section
 ______________________________________________________________________________________________________
+
+## Daliy Log
+
 #### Day 1
 
 ##### 4/9/2021
@@ -60,5 +63,14 @@ ________________________________________________________________________________
 
 ##### Credits
 
->[Charmeleon Image](https://w7.pngwing.com/pngs/24/646/png-transparent-charmeleon-pokemon-go-drawing-charmander-pokemon-go-mammal-carnivoran-dragon.png) 
+> [Charmeleon Image](https://w7.pngwing.com/pngs/24/646/png-transparent-charmeleon-pokemon-go-drawing-charmander-pokemon-go-mammal-carnivoran-dragon.png) 
+>
+> ####Creators
+>
+> Alisson Corrales
+>
+> Samuel Dobos
+> Daniel 
+>
+> Fernando
 
