@@ -57,14 +57,21 @@ ________________________________________________________________________________
 #### 4/13/2021
 
 > - Created landing page and corresponding CSS
+>
+> - Completed most of the JavaScript
+>
+> - Started Work on the SCSS and CSS
+>
+> - Completed most of HTML
+>
+> - Formated the Read.md file with more synatxes 
 
 ___________________________________________________________________________________________
 
 ## Credits
 
-> #### Image Links
 > [Charmeleon Image](https://w7.pngwing.com/pngs/24/646/png-transparent-charmeleon-pokemon-go-drawing-charmander-pokemon-go-mammal-carnivoran-dragon.png) 
->
+
 
 #### Creators
 
