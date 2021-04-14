@@ -51,6 +51,12 @@ ________________________________________________________________________________
 > - Started on Js 
 >
 > - Added content to the README.md file
+>
+> AC:
+>
+> - made a boiler plate file for the pokemon pages
+>
+> - started working on the functions for Charmander JSON
 
 #### Day 2
 
@@ -65,6 +71,10 @@ ________________________________________________________________________________
 > - Completed most of HTML
 >
 > - Formated the Read.md file with more synatxes 
+>
+> AC:
+>
+> - Finished the functions for the JSON text
 ___________________________________________________________________________________________
 
 ## Credits

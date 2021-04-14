@@ -208,6 +208,3 @@ charizard.src = "media/charizard.png";
 charizard.height = "200";
 charizard.width = "190";
 section4.appendChild(charizard);
-
-//I did all the JSON for the pokemon pages
-//gitkraken will back me up
