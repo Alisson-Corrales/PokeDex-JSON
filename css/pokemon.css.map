@@ -1,8 +1,8 @@
 {
     "version": 3,
-    "mappings": "AAMA,AAAA,GAAG,CAAA;EACC,MAAM,EAAE,iBAAiB;CAC5B;;AAED,AAAA,CAAC,CAAA;EACG,MAAM,EAAE,iBAAiB;CAC5B",
+    "mappings": "AAQA,AAAA,OAAO,CAAA;EACH,OAAO,EAAE,OAAO;CACnB;;AAED,AAAA,GAAG,CAAA;EACC,MAAM,EAAE,iBAAiB;CAC5B;;AAED,AAAA,CAAC,CAAA;EACG,MAAM,EAAE,iBAAiB;CAC5B",
     "sources": [
-        "../PokeDex-JSON/pokemon.scss"
+        "../pokemon.scss"
     ],
     "names": [],
     "file": "pokemon.css"
