@@ -36,6 +36,9 @@ ________________________________________________________________________________
 
 ## Daliy Log
 
+##### Disclaimer
+> This is a log where it include everyone work in general and is not subject to one person
+
 #### Day 1
 
 ##### 4/9/2021
@@ -83,6 +86,14 @@ ________________________________________________________________________________
 #### Day 3
 
 #### 4/14/2021
+
+> - Work in progress for the JavaScript
+>
+> - Work in progress for the SCSS and Images
+>
+> - Work on the Formating of the Information, Such as
+    > - Background, borders, image sizing, etc.
+>
 
 
 ___________________________________________________________________________________________
