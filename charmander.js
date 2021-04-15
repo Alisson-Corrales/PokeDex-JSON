@@ -4,7 +4,7 @@
 //file = /charmander.html - except you splice our the / and .html
 //file += .json
 
-let charmander = `{"abilities": [
+let charmander = {"abilities": [
       {
         "name": "Blaze"
       },
@@ -70,7 +70,7 @@ let charmander = `{"abilities": [
         }
       }
     ],
-"weight": 8.5}`
+"weight": 8.5}
 
 
 //🔥gets all the elements in the html🔥
@@ -82,7 +82,74 @@ let section3 = document.getElementById("description")
 let section4 = document.getElementById("description") 
 //let links = document.getElementById("links");
 //turns charmander array into sometihng we can easily output
-let charms = JSON.parse(charmander)
+
+//grabs all the arrays and seperates them
+const{name: n, stats: newStats, abilities: abils, id, ...Others} = charmander
+
+
+//✧･ﾟ: *✧･ﾟ:**:･ﾟ✧*:･ﾟ✧//
+
+
+//
+const H1 = document.createElement("h1")
+H1.textContent = n;
+imgName.appendChild(H1)
+
+
+//
+const ARTICLE = document.createElement("article");
+const BASE = document.createElement("li");
+const LIST = document.createElement("div")
+const listITEM = document.createElement("li");
+const ORDER = document.createElement("li");
+const ID = document.createElement("li");
+const HEIGHT = document.createElement("li");
+const WEIGHT = document.createElement("li");
+
+BASE.textContent = `Base experience: ${Others["base_experience"]} (Gen I-IV)`;
+ORDER.textContent = `Order: ${Others["order"]}`;
+ID.textContent = `ID: 00${id}`;
+HEIGHT.textContent = `Height: 0.${Others["height"]} m`;
+WEIGHT.textContent = `Weight: ${Others["weight"]} kg`;
+
+const TYPES = Others["types"];
+for(let t in TYPES){
+  const TYPE = document.createElement("li")
+  TYPE.textContent = `Type: ${[TYPES][t]["name"]}`;
+  LIST.appendChild(TYPE)
+}
+
+  ARTICLE.appendChild(BASE);
+  ARTICLE.appendChild(LIST);
+  ARTICLE.appendChild(ORDER);
+  ARTICLE.appendChild(ID);
+  ARTICLE.appendChild(HEIGHT);
+  ARTICLE.appendChild(WEIGHT);
+
+  section1.appendChild(ARTICLE)
+
+
+//
+
+
+
+//🔥 IMGS 🔥
+document.getElementById("img").height = "490";
+document.getElementById("img").width = "540";
+
+let charmeleon = document.createElement("img");
+charmeleon.src = "media/charmeleon.png";
+charmeleon.height = "140";
+charmeleon.width = "120";
+section4.appendChild(charmeleon);
+
+let charizard = document.createElement("img");
+charizard.src = "media/charizard.png";
+charizard.height = "190";
+charizard.width = "180";
+section4.appendChild(charizard);
+
+/*let charms = JSON.parse(charmander)
 
 
 createImgName(charms);
@@ -90,11 +157,7 @@ createGen(charms);
 createAble(charms);
 createStats(charms);
 
-
-
 //✧･ﾟ: *✧･ﾟ:**:･ﾟ✧*:･ﾟ✧//
-
-
 
 //🔥 makes the image and the name🔥 
 function createImgName(obj){
@@ -102,7 +165,6 @@ function createImgName(obj){
     H1.textContent = obj.name;
     imgName.appendChild(H1)
 }
-
 
 //grabs values that are in the array and puts them in the descript. box
 //should change based on different buttons
@@ -139,6 +201,7 @@ function createGen(obj){
 
   section1.appendChild(ARTICLE)
 }
+
 //🔥this one generates the abiliteis text🔥
 function createAble(obj){
   //makes the article where everything goees and p1
@@ -208,3 +271,4 @@ charizard.src = "media/charizard.png";
 charizard.height = "200";
 charizard.width = "190";
 section4.appendChild(charizard);
+*/

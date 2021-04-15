@@ -1,0 +1,43 @@
+body {
+  background-color: #c6f5e1;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+#grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: #ffe77b;
+  border-radius: 5%;
+  padding: 5%;
+  margin: 1.5%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#grid h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+}
+
+#grid p {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+}
+
+#grid li {
+  list-style-type: none;
+}
+
+/*div{
+    border: #de553b 1px solid;
+}
+
+p{
+    border: #de553b 1px solid;
+}
+*/
+/*# sourceMappingURL=charmander.css.map */
