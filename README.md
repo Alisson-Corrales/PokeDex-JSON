@@ -10,7 +10,7 @@
 >
 > Most of the HTML present on the pages (excluding the landing page) will be made with JS
 
-### OverView {#overview}
+### OverView
 
 |    Name  |   Task               |
 | :----:   | :----:               |
