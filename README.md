@@ -10,6 +10,15 @@
 >
 > Most of the HTML present on the pages (excluding the landing page) will be made with JS
 
+### OverView
+
+|    Name  |   Task               |
+| :----:   | :----:               |
+| Alisson  | HTML / JS / SCSS     |
+| Samuel   | HTML / JS / CSS      |
+| Daniel   | JS / SCSS / HTML     |
+| Fernando | MarkDown / HTML / JS |
+
 #### Features
 
 - The buttons on the PokeDex will switch betweens pages
@@ -37,7 +46,7 @@ ________________________________________________________________________________
 ## Daliy Log
 
 ##### Disclaimer
-> This is a log where it include everyone work in general and is not subject to one person
+> This is a log where, it decribes everyone's work in general and is not subject to one person
 
 #### Day 1
 
@@ -126,11 +135,5 @@ ________________________________________________________________________________
 
 
 
-
 #### Testing
 
-| Discription | Examples |
-| :------:    | :----:   |
-| Test        | test     |
-| Test        | test     |
-| test        | test     |
