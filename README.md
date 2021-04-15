@@ -1,6 +1,6 @@
 # PokeDex-JSON
 
-<span style= "font-family: monospace font-size: 3rem">Discription</span>
+## Discription
 
 > This project is to test our abilities to use JSON
 >
