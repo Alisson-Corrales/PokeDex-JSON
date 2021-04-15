@@ -46,7 +46,7 @@ ________________________________________________________________________________
 ## Daliy Log
 
 ##### Disclaimer
-> This is a log where, it decribes everyone's work in general and is not subject to one person
+> This is a log decribes everyone's work in general and is not subject to one person
 
 #### Day 1
 
