@@ -92,7 +92,10 @@ ________________________________________________________________________________
 > - Work in progress for the SCSS and Images
 >
 > - Work on the Formating of the Information, Such as  
-     - Background, borders, image sizing, etc.
+- [x] Background
+- [x] borders 
+- [x] image sizing
+- [] etc.
 >
 
 
