@@ -51,21 +51,41 @@ ________________________________________________________________________________
 > - Started on Js 
 >
 > - Added content to the README.md file
+>
+> AC:
+>
+> - made a boiler plate file for the pokemon pages
+>
+> - started working on the functions for Charmander JSON
 
 #### Day 2
 
 #### 4/13/2021
 
 > - Created landing page and corresponding CSS
-
+>
+> - Completed most of the JavaScript
+>
+> - Started Work on the SCSS and CSS
+>
+> - Completed most of HTML
+>
+> - Formated the Read.md file with more synatxes 
+>
+> AC:
+>
+> - Finished the functions for the JSON text
 ___________________________________________________________________________________________
 
 ## Credits
 
-> #### Image Links
-> [Charmeleon Image](https://w7.pngwing.com/pngs/24/646/png-transparent-charmeleon-pokemon-go-drawing-charmander-pokemon-go-mammal-carnivoran-dragon.png) 
->
+> [Charmeleon Image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngaaa.com%2Fdetail%2F3998789&psig=AOvVaw2CIAobtBk9Pbk3W2oddjQV&ust=1618449521948000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLjA9L_I_O8CFQAAAAAdAAAAABAD) 
 
+
+##### Credits
+>Favicon(https://cdn.bulbagarden.net/upload/a/a6/SugimoriPokeBall.png)
+>Charmander Image(https://bulbapedia.bulbagarden.net/wiki/Charmander_(Pok%C3%A9mon))
+>Charmeleon Image(https://w7.pngwing.com/pngs/24/646/png-transparent-charmeleon-pokemon-go-drawing-charmander-pokemon-go-mammal-carnivoran-dragon.png) 
 #### Creators
 
 > Alisson 
