@@ -1,3 +1,7 @@
+section {
+  display: flexbox;
+}
+
 div {
   border: #de553b 1px solid;
 }

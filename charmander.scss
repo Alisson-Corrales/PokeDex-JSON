@@ -1,0 +1,46 @@
+//for the pokemon pages
+
+$charmander: #fde36d;
+$charmeleon: #f2b65e;
+$charizard: #de553b;
+$general: #b2ebd2;
+
+
+body{
+    background-color: $general;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+#grid{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: $charmander;
+    border-radius: 5%;
+    padding: 5%;
+    margin: 1.5%;
+    //margin-left: 0;
+    //margin-right: 0;
+
+    h1{
+        font-family: 'Orbitron', sans-serif;
+        font-size: 3rem;
+    }
+    p{
+        font-family: 'Orbitron', sans-serif;
+        font-size: 1.5rem;
+    }
+    li{
+        list-style-type: none;
+    }
+}
+
+
+/*div{
+    border: #de553b 1px solid;
+}
+
+p{
+    border: #de553b 1px solid;
+}
+*/
