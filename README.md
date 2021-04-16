@@ -46,7 +46,7 @@ ________________________________________________________________________________
 ## Daliy Log
 
 ##### Disclaimer
-> This is a log decribes everyone's work in general and is not subject to one person
+> This is a log that decribes everyone's work in general and is not subject to one person
 
 #### Day 1
 
@@ -114,6 +114,21 @@ ________________________________________________________________________________
 > - started working on sass
 
 ___________________________________________________________________________________________
+
+#### Day 4
+
+#### 4/15/2021
+
+> - Continuation from yesterday
+> 
+> - Working on Javascript
+>
+> - SCSS in progress
+>
+> - Markdown file updated with a table and Overview
+
+
+____________________________________________________________________________________________
 
 ## Credits
 
