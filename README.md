@@ -10,6 +10,15 @@
 >
 > Most of the HTML present on the pages (excluding the landing page) will be made with JS
 
+### OverView
+
+|    Name  |   Task               |
+| :----:   | :----:               |
+| Alisson  | HTML / JS / SCSS     |
+| Samuel   | HTML / JS / CSS      |
+| Daniel   | JS / SCSS / HTML     |
+| Fernando | MarkDown / HTML / JS |
+
 #### Features
 
 - The buttons on the PokeDex will switch betweens pages
@@ -37,7 +46,7 @@ ________________________________________________________________________________
 ## Daliy Log
 
 ##### Disclaimer
-> This is a log where it include everyone work in general and is not subject to one person
+> This is a log that decribes everyone's work in general and is not subject to one person
 
 #### Day 1
 
@@ -96,6 +105,7 @@ ________________________________________________________________________________
 - [x] borders 
 - [x] image sizing
 - [x] etc.
+
 >
 > AC:
 >
@@ -104,6 +114,23 @@ ________________________________________________________________________________
 > - started working on sass
 
 ___________________________________________________________________________________________
+
+#### Day 4
+
+#### 4/15/2021
+
+> - Continuation from yesterday
+> 
+> - Working on Javascript
+>
+> - SCSS in progress
+>
+> - Markdown file updated with a table and Overview
+>
+> - ~~Merge Confilct~~
+
+
+____________________________________________________________________________________________
 
 ## Credits
 
@@ -122,4 +149,6 @@ ________________________________________________________________________________
 > Daniel 
 >
 > Fernando
+
+
 
