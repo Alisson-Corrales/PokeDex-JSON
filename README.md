@@ -6,7 +6,7 @@
 >
 > We will create a website using JavaScript, HTML, SCSS
 >
-> We want to make the PokeDex look like an actual PokeDex
+> ~~We want to make the PokeDex look like an actual PokeDex~~
 >
 > Most of the HTML present on the pages (excluding the landing page) will be made with JS
 
@@ -141,9 +141,23 @@ ________________________________________________________________________________
 
 ____________________________________________________________________________________________
 
+#### Day 5
+
+#### 4/16/2021
+
+> - Added SCSS file for Chameleon
+>
+> - Added new image for Charmeleon as pervious was not transparent
+>
+> - Fixed a few merge errors 
+>
+>- Figuing out how to swicth between pages using 1 JavaScript file
+
+_________________________________________________________________________________________
+
 ## Credits
 
-> [Charmeleon Image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngaaa.com%2Fdetail%2F3998789&psig=AOvVaw2CIAobtBk9Pbk3W2oddjQV&ust=1618449521948000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLjA9L_I_O8CFQAAAAAdAAAAABAD)  
+> [Charmeleon Image](https://www.google.com/url?sa=i&url=https%3A%2F%2Far.pinterest.com%2Fpin%2F516999232228791711%2F&psig=AOvVaw0ApBkO7I_DWegNPuqhOTvm&ust=1618702353880000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOig-6r2g_ACFQAAAAAdAAAAABAD)  
 > 
 > [Favicon](https://cdn.bulbagarden.net/upload/a/a6/SugimoriPokeBall.png)  
 >

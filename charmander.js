@@ -75,6 +75,7 @@ let charmander = {
 }
 
 
+
 //🔥gets all the elements in the html🔥
 let grid = document.getElementById("charmander");
 let imgName = document.getElementById("imageAndName");
@@ -218,7 +219,7 @@ let textLevel1 = document.createElement("p");
 textLevel1.textContent = "Level 16!";
 
 let charmeleon = document.createElement("img");
-charmeleon.src = "media/charmeleon.png";
+charmeleon.src = "images/charmeleon.png";
 charmeleon.height = "140";
 charmeleon.width = "120";
 link1.appendChild(charmeleon)
@@ -234,7 +235,7 @@ let textLevel2 = document.createElement("p")
 textLevel2.textContent = "Level 36!"
 
 let charizard = document.createElement("img");
-charizard.src = "media/charizard.png";
+charizard.src = "images/charizard2.png";
 charizard.height = "190";
 charizard.width = "180";
 link2.appendChild(charizard)
