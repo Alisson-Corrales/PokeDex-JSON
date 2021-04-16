@@ -46,7 +46,7 @@ ________________________________________________________________________________
 ## Daliy Log
 
 ##### Disclaimer
-> This is a log that decribes everyone's work in general and is not subject to one person
+> This is a log that `decribes everyone's` work in general and is not subject to one person
 
 #### Day 1
 
@@ -128,6 +128,11 @@ ________________________________________________________________________________
 > - Markdown file updated with a table and Overview
 >
 > - ~~Merge Confilct~~
+>
+> - Completed Charmander Page
+>
+> - Completed corresponding JSON
+>
 
 
 ____________________________________________________________________________________________
