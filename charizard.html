@@ -5,33 +5,37 @@
     <meta name="author" content="Daniel Gutierrez">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/pokemon.css">
     <title>Charizard</title>
+    <link rel="shortcut icon" type="image/png" href="https://cdn.bulbagarden.net/upload/a/a6/SugimoriPokeBall.png"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/charmander.css">
 </head>
-<body id="charizard">
+<body id="charmander">
     <!--
         notes:
         - all elements are in a grid container (each square in the base.png could be a grid item of its own)
         - need space for the image and name (one whole div)
         - description is a div
-        -four buttons for each thing (abilities, stats, abilities, catch all button for everything else)
+        -four buttons for each thing (abilities, stats, types, catch all button for everything else)
         -two buttons (maybe JPGs or PNGs with links)
     -->
 
     <div id="grid">
-        <div id="imageAndName"></div>
-
-        <p id="description"></p>
-
-        <p id="basic"></p>
-
-        <p id="stats"></p>
-        
+        <div id="imageAndName">
+            <img src="media/charizard.png" alt="charizard" id="img">
+        </div>
+        <section id="description"></section>
+        <div id="buttons">
+            <button id="general"></button>
+            <button id="stats"></button>
+            <button id="abilites"></button>
+        </div>
         <div id="links"></div>
     </div>
 
-
-    <script src="pokemonCOPY.js"></script>
     <footer>Charmander, Charmeleon, and Charizard all belong to Nintendo, Game Freak, and Creatures</footer>
+
+    <script src="charmander.js"></script>
 </body>
 </html>
