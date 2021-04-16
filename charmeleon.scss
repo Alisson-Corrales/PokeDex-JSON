@@ -1,0 +1,68 @@
+//for the pokemon pages
+
+//colors
+$charmander: #fde36d;
+$charman-insides: rgb(252, 247, 217);
+$charmeleon: #f2b65e;
+$charmel-insides:#ffedd3;
+$charizard: #de553b;
+$chari-insides: #ffd3ca;
+$general: #ade0cb;
+
+
+body{
+    background-color: $general;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+#grid{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: $charmeleon;
+    border-radius: 5%;
+    padding: 5%;
+    margin: 1.5%;
+    grid-gap: 2rem;
+
+    h1{
+        font-family: 'Orbitron', sans-serif;
+        font-size: 3rem;
+    }
+    p{
+        font-family: 'Orbitron', sans-serif;
+        font-size: 1.5rem;
+    }
+    li{
+        list-style-type: none;
+    }
+}
+
+#imageAndName{
+    background-color: $charmel-insides;
+    padding: 2rem;
+    border-radius: 10%;
+}
+
+#generalAbilities{
+    display: flex;
+    align-items: center;
+    background-color: $charmel-insides;
+    border-radius: 10%;
+    padding: 2%;
+}
+#stats{
+    background-color: $charmel-insides;
+    border-radius: 10%;
+    padding: 2%;
+}
+#links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $charmel-insides;
+    border-radius: 10%;
+    padding: 2%;
+}
