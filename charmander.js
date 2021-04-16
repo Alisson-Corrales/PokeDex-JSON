@@ -177,9 +177,9 @@ general.appendChild(ARTICLE1)
 //🔥 displays the stats 🔥
 //
 
-const ARTICLE3 = document.createElement("article");
+const ARTICLE2 = document.createElement("article");
 const P2 = document.createElement("p");
-ARTICLE3.appendChild(P2)
+ARTICLE2.appendChild(P2)
 
 //loops through newStats to grab the objects and display them
 for (let s in newStats) {
@@ -194,13 +194,13 @@ for (let s in newStats) {
 
   STATISTS.textContent = `${newStats[s]["stat"]["name"]}:`;
 
-  ARTICLE3.appendChild(STATISTS)
-  ARTICLE3.appendChild(BASE)
-  ARTICLE3.appendChild(EFFORT)
-  ARTICLE3.appendChild(BREAK)
+  ARTICLE2.appendChild(STATISTS)
+  ARTICLE2.appendChild(BASE)
+  ARTICLE2.appendChild(EFFORT)
+  ARTICLE2.appendChild(BREAK)
 }
 //this displays EVERYTHING
-stats.appendChild(ARTICLE3)
+stats.appendChild(ARTICLE2)
 
 
 //
