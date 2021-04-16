@@ -76,18 +76,14 @@ let charmander = {
 
 
 //🔥gets all the elements in the html🔥
-//let grid = document.getElementById("grid");
+let grid = document.getElementById("charmander");
 let imgName = document.getElementById("imageAndName");
 let general = document.getElementById("generalAbilities")
 //let abilities = document.getElementById("abilities")
 let stats = document.getElementById("stats")
 let links = document.getElementById("links")
-//let links = document.getElementById("links");
-//turns charmander array into sometihng we can easily output
-//section1
-//section2
-//section3
-//section4
+
+
 //grabs all the arrays and seperates them
 const { name: n, stats: newStats, abilities: abils, id, types: Types, ...Others } = charmander
 console.log(n)
@@ -100,8 +96,16 @@ console.log(Others)
 
 // + ✧･ﾟ: *✧･ﾟ:**:･ﾟ✧*:･ﾟ✧ + //
 
+//
+//🔥 makes a navbar 🔥
+//
+const NAV = document.createElement("nav");
+const ICON = document.createElement("img")
 
+
+//
 //🔥 displays the pokemon's name 🔥
+//
 const H1 = document.createElement("h1")
 H1.textContent = n;
 imgName.appendChild(H1)
@@ -162,7 +166,7 @@ ARTICLE1.appendChild(TITLE2)
 //loops through abils to grab the objects and display them
 for (let a in abils) {
   const ITEMS = document.createElement("li");
-  ITEMS.textContent = abils[a]["name"];
+  ITEMS.textContent = `🔥 ${abils[a]["name"]} 🔥`;
   TITLE2.textContent = `Abilities:`;
   ARTICLE1.appendChild(ITEMS)
 }
@@ -206,7 +210,7 @@ stats.appendChild(ARTICLE3)
 document.getElementById("img").height = "490";
 document.getElementById("img").width = "540";
 
-//makes a p element charmeleon img link that's 140X120 px
+//makes a p element and charmeleon img link that's 140X120 px
 let link1 = document.createElement("a");
 link1.setAttribute("href", "charmeleon.html");
 
