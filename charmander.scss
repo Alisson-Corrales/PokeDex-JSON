@@ -1,9 +1,13 @@
 //for the pokemon pages
 
+//colors
 $charmander: #fde36d;
+$charman-insides: rgb(252, 247, 217);
 $charmeleon: #f2b65e;
+$charmel-insides:#ffedd3;
 $charizard: #de553b;
-$general: #b2ebd2;
+$chari-insides: #ffd3ca;
+$general: #ade0cb;
 
 
 body{
@@ -19,8 +23,7 @@ body{
     border-radius: 5%;
     padding: 5%;
     margin: 1.5%;
-    //margin-left: 0;
-    //margin-right: 0;
+    grid-gap: 2rem;
 
     h1{
         font-family: 'Orbitron', sans-serif;
@@ -35,12 +38,31 @@ body{
     }
 }
 
-
-/*div{
-    border: #de553b 1px solid;
+#imageAndName{
+    background-color: $charman-insides;
+    padding: 2rem;
+    border-radius: 10%;
 }
 
-p{
-    border: #de553b 1px solid;
+#generalAbilities{
+    display: flex;
+    align-items: center;
+    background-color: $charman-insides;
+    border-radius: 10%;
+    padding: 2%;
 }
-*/
+#stats{
+    background-color: $charman-insides;
+    border-radius: 10%;
+    padding: 2%;
+}
+#links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $charman-insides;
+    border-radius: 10%;
+    padding: 2%;
+}

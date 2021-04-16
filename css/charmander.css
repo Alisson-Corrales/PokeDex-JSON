@@ -1,16 +1,20 @@
 body {
-  background-color: #b2ebd2;
+  background-color: #ade0cb;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
 
 #grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   background-color: #fde36d;
   border-radius: 5%;
   padding: 5%;
   margin: 1.5%;
+  grid-gap: 2rem;
 }
 
 #grid h1 {
@@ -27,12 +31,46 @@ body {
   list-style-type: none;
 }
 
-/*div{
-    border: #de553b 1px solid;
+#imageAndName {
+  background-color: #fcf7d9;
+  padding: 2rem;
+  border-radius: 10%;
 }
 
-p{
-    border: #de553b 1px solid;
+#generalAbilities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fcf7d9;
+  border-radius: 10%;
+  padding: 2%;
 }
-*/
+
+#stats {
+  background-color: #fcf7d9;
+  border-radius: 10%;
+  padding: 2%;
+}
+
+#links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fcf7d9;
+  border-radius: 10%;
+  padding: 2%;
+}
 /*# sourceMappingURL=charmander.css.map */

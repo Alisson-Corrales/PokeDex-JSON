@@ -4,87 +4,92 @@
 //file = /charmander.html - except you splice our the / and .html
 //file += .json
 
-let charmander = {"abilities": [
-      {
-        "name": "Blaze"
-      },
-      {
-        "name": "Solar-power"
+let charmander = {
+  "abilities": [
+    {
+      "name": "Blaze"
+    },
+    {
+      "name": "Solar-power"
+    }
+  ],
+  "base_experience": 62,
+  "height": 6,
+  "id": 4,
+  "is_default": true,
+  "name": "Charmander",
+  "order": 5,
+  "stats": [
+    {
+      "base_stat": 39,
+      "effort": 0,
+      "stat": {
+        "name": "HP"
       }
-    ],
-    "base_experience": 62,
-    "height": 6,
-    "id": 4,
-    "is_default": true,
-    "name": "Charmander",
-    "order": 5,
-    "stats": [
-      {
-        "base_stat": 39,
-        "effort": 0,
-        "stat": {
-          "name": "HP"
-        }
-      },
-      {
-        "base_stat": 52,
-        "effort": 0,
-        "stat": {
-          "name": "Attack"
-        }
-      },
-      {
-        "base_stat": 43,
-        "effort": 0,
-        "stat": {
-          "name": "Defense"
-        }
-      },
-      {
-        "base_stat": 60,
-        "effort": 0,
-        "stat": {
-          "name": "Special-attack"
-        }
-      },
-      {
-        "base_stat": 50,
-        "effort": 0,
-        "stat": {
-          "name": "Special-defense"
-        }
-      },
-      {
-        "base_stat": 65,
-        "effort": 1,
-        "stat": {
-          "name": "Speed"
-        }
+    },
+    {
+      "base_stat": 52,
+      "effort": 0,
+      "stat": {
+        "name": "Attack"
       }
-    ],
-    "types": [
-      {
-        "slot": 1,
-        "type": {
-          "name": "fire"
-        }
+    },
+    {
+      "base_stat": 43,
+      "effort": 0,
+      "stat": {
+        "name": "Defense"
       }
-    ],
-"weight": 8.5}
+    },
+    {
+      "base_stat": 60,
+      "effort": 0,
+      "stat": {
+        "name": "Special-attack"
+      }
+    },
+    {
+      "base_stat": 50,
+      "effort": 0,
+      "stat": {
+        "name": "Special-defense"
+      }
+    },
+    {
+      "base_stat": 65,
+      "effort": 1,
+      "stat": {
+        "name": "Speed"
+      }
+    }
+  ],
+  "types": [
+    {
+      "slot": 1,
+      "type": {
+        "name": "fire"
+      }
+    }
+  ],
+  "weight": 8.5
+}
 
 
 //🔥gets all the elements in the html🔥
 //let grid = document.getElementById("grid");
 let imgName = document.getElementById("imageAndName");
-let section1 = document.getElementById("general")
-let section2 = document.getElementById("abilities")
-let section3 = document.getElementById("stats") 
-let section4 = document.getElementById("links") 
+let general = document.getElementById("generalAbilities")
+//let abilities = document.getElementById("abilities")
+let stats = document.getElementById("stats")
+let links = document.getElementById("links")
 //let links = document.getElementById("links");
 //turns charmander array into sometihng we can easily output
-
+//section1
+//section2
+//section3
+//section4
 //grabs all the arrays and seperates them
-const{name: n, stats: newStats, abilities: abils, id, types: Types, ...Others} = charmander
+const { name: n, stats: newStats, abilities: abils, id, types: Types, ...Others } = charmander
 console.log(n)
 console.log(newStats)
 console.log(abils)
@@ -102,8 +107,12 @@ H1.textContent = n;
 imgName.appendChild(H1)
 
 
+//
 //🔥 displays the Others 🔥
-const ARTICLE = document.createElement("article");
+//
+//makes the elements that are going to be filled
+const ARTICLE1 = document.createElement("article");
+const TITLE1 = document.createElement("p")
 const BASE = document.createElement("li");
 const LIST = document.createElement("div")
 const ORDER = document.createElement("li");
@@ -111,13 +120,16 @@ const ID = document.createElement("li");
 const HEIGHT = document.createElement("li");
 const WEIGHT = document.createElement("li");
 
+//fills the previously made elements
+TITLE1.textContent = `General:`
 BASE.textContent = `Base experience: ${Others["base_experience"]} (Gen I-IV)`;
 ORDER.textContent = `Order: ${Others["order"]}`;
 ID.textContent = `ID: 00${id}`;
 HEIGHT.textContent = `Height: 0.${Others["height"]} m`;
 WEIGHT.textContent = `Weight: ${Others["weight"]} kg`;
 
-for(let t in Types){
+//loops through types to grab and output the pokemon's type and its slot (which i assumed was its total EVs)
+for (let t in Types) {
   const listITEM1 = document.createElement("li");
   const listITEM2 = document.createElement("li");
   listITEM1.textContent = `Type: ${Types[t]["type"]["name"]}`
@@ -127,190 +139,101 @@ for(let t in Types){
   LIST.appendChild(listITEM2)
 }
 
-  ARTICLE.appendChild(BASE);
-  ARTICLE.appendChild(LIST);
-  ARTICLE.appendChild(ORDER);
-  ARTICLE.appendChild(ID);
-  ARTICLE.appendChild(HEIGHT);
-  ARTICLE.appendChild(WEIGHT);
+//displays the elements
+ARTICLE1.appendChild(TITLE1)
+ARTICLE1.appendChild(BASE);
+ARTICLE1.appendChild(LIST);
+ARTICLE1.appendChild(ORDER);
+ARTICLE1.appendChild(ID);
+ARTICLE1.appendChild(HEIGHT);
+ARTICLE1.appendChild(WEIGHT);
 
-  general.appendChild(ARTICLE)
+//this displays EVERYTHING
+general.appendChild(ARTICLE1)
 
 
+//
 //🔥 displays the abilities 🔥
-//makes the article where everything goees and p1
-const P1 = document.createElement("p");
-ARTICLE.appendChild(P1)
+//
+//makes the title
+const TITLE2 = document.createElement("p");
+ARTICLE1.appendChild(TITLE2)
 
-for(let a in abils){
+//loops through abils to grab the objects and display them
+for (let a in abils) {
   const ITEMS = document.createElement("li");
   ITEMS.textContent = abils[a]["name"];
-  P1.textContent = `Abilities:`;
-  ARTICLE.appendChild(ITEMS)
+  TITLE2.textContent = `Abilities:`;
+  ARTICLE1.appendChild(ITEMS)
 }
-abilities.appendChild(ARTICLE)
+//this displays EVERYTHING
+general.appendChild(ARTICLE1)
 
-
+//
 //🔥 displays the stats 🔥
+//
+
+const ARTICLE3 = document.createElement("article");
 const P2 = document.createElement("p");
-  ARTICLE.appendChild(P2)
-  
-  for(let s in newStats){
-    const BASE = document.createElement("li");
-    const EFFORT = document.createElement("li");
-    const STATISTS = document.createElement("li");
-    const BREAK = document.createElement("br")
+ARTICLE3.appendChild(P2)
 
-    P2.textContent = `Stats:`
-    BASE.textContent = `Base: ${newStats[s]["base_stat"]}`;
-    EFFORT.textContent = `Effort: ${newStats[s]["effort"]}`;
+//loops through newStats to grab the objects and display them
+for (let s in newStats) {
+  const BASE = document.createElement("li");
+  const EFFORT = document.createElement("li");
+  const STATISTS = document.createElement("li");
+  const BREAK = document.createElement("br")
 
-    STATISTS.textContent = `${newStats[s]["stat"]["name"]}:`;
+  P2.textContent = `Stats:`
+  BASE.textContent = `Base: ${newStats[s]["base_stat"]}`;
+  EFFORT.textContent = `Effort: ${newStats[s]["effort"]}`;
 
-    ARTICLE.appendChild(STATISTS)
-    ARTICLE.appendChild(BASE)
-    ARTICLE.appendChild(EFFORT)
-    ARTICLE.appendChild(BREAK)
-  }
-  stats.appendChild(ARTICLE)
+  STATISTS.textContent = `${newStats[s]["stat"]["name"]}:`;
 
-  
+  ARTICLE3.appendChild(STATISTS)
+  ARTICLE3.appendChild(BASE)
+  ARTICLE3.appendChild(EFFORT)
+  ARTICLE3.appendChild(BREAK)
+}
+//this displays EVERYTHING
+stats.appendChild(ARTICLE3)
+
+
+//
 //🔥 IMGS 🔥
+//
+//makes the charmander picture 490 X 540 px
 document.getElementById("img").height = "490";
 document.getElementById("img").width = "540";
+
+//makes a p element charmeleon img link that's 140X120 px
+let link1 = document.createElement("a");
+link1.setAttribute("href", "charmeleon.html");
+
+let textLevel1 = document.createElement("p");
+textLevel1.textContent = "Level 16!";
 
 let charmeleon = document.createElement("img");
 charmeleon.src = "media/charmeleon.png";
 charmeleon.height = "140";
 charmeleon.width = "120";
-section4.appendChild(charmeleon);
+link1.appendChild(charmeleon)
+
+links.appendChild(textLevel1);
+links.appendChild(link1);
+
+//makes a p element and a charizard image link that's 190X120 px 
+let link2 = document.createElement("a");
+link2.setAttribute("href", "charizard.html");
+
+let textLevel2 = document.createElement("p")
+textLevel2.textContent = "Level 36!"
 
 let charizard = document.createElement("img");
 charizard.src = "media/charizard.png";
 charizard.height = "190";
 charizard.width = "180";
-links.appendChild(charizard);
+link2.appendChild(charizard)
 
-/*let charms = JSON.parse(charmander)
-
-
-createImgName(charms);
-createGen(charms);
-createAble(charms);
-createStats(charms);
-
-//✧･ﾟ: *✧･ﾟ:**:･ﾟ✧*:･ﾟ✧//
-
-//🔥 makes the image and the name🔥 
-function createImgName(obj){
-    const H1 = document.createElement("h1")
-    H1.textContent = obj.name;
-    imgName.appendChild(H1)
-}
-
-//grabs values that are in the array and puts them in the descript. box
-//should change based on different buttons
-//🔥 this one generates the general text (the first thing that shows in the site)🔥
-function createGen(obj){
-  //makes the article where everything goees and p1
-  const ARTICLE = document.createElement("article");
-  const BASE = document.createElement("li");
-  const LIST = document.createElement("div")
-  const ORDER = document.createElement("li");
-  const ID = document.createElement("li");
-  const HEIGHT = document.createElement("li");
-  const WEIGHT = document.createElement("li");
-
-  BASE.textContent = `Base experience: ${obj["base_experience"]} (Gen I-IV)`;
-  ORDER.textContent = `Order: ${obj["order"]}`;
-  ID.textContent = `ID: 00${obj["id"]}`;
-  HEIGHT.textContent = `Height: 0.${obj["height"]} m`;
-  WEIGHT.textContent = `Weight: ${obj["weight"]} kg`;
-
-  const TYPES = obj.types;
-  for(let t in TYPES){
-    const TYPE = document.createElement("li")
-    TYPE.textContent = `Type: ${TYPES[t]["type"]["name"]}`;
-    LIST.appendChild(TYPE)
-  }
-  
-  ARTICLE.appendChild(BASE);
-  ARTICLE.appendChild(LIST);
-  ARTICLE.appendChild(ORDER);
-  ARTICLE.appendChild(ID);
-  ARTICLE.appendChild(HEIGHT);
-  ARTICLE.appendChild(WEIGHT);
-
-  section1.appendChild(ARTICLE)
-}
-
-//🔥this one generates the abiliteis text🔥
-function createAble(obj){
-  //makes the article where everything goees and p1
-  const ARTICLE = document.createElement("article");
-  const P1 = document.createElement("p");
-  ARTICLE.appendChild(P1)
-  
-  const ABILITIES = obj["abilities"];
-  for(let a in ABILITIES){
-    const ITEMS = document.createElement("li");
-    ITEMS.textContent = ABILITIES[a]["name"];
-    P1.textContent = `Abilities:`;
-    ARTICLE.appendChild(ITEMS)
-  }
-  section2.appendChild(ARTICLE)
-}
-//🔥this one generates the stats text🔥
-function createStats(obj){
-  //makes the article where everything goees and p1
-  const ARTICLE = document.createElement("article");
-  const P1 = document.createElement("p");
-  ARTICLE.appendChild(P1)
-  
-  const STATS = obj["stats"];
-  for(let s in STATS){
-    const BASE = document.createElement("li");
-    const EFFORT = document.createElement("li");
-    const STATISTS = document.createElement("li");
-    const BREAK = document.createElement("br")
-
-    P1.textContent = `Stats:`
-    BASE.textContent = `Base: ${STATS[s]["base_stat"]}`;
-    EFFORT.textContent = `Effort: ${STATS[s]["effort"]}`;
-
-    STATISTS.textContent = `${STATS[s]["stat"]["name"]}:`;
-
-    ARTICLE.appendChild(STATISTS)
-    ARTICLE.appendChild(BASE)
-    ARTICLE.appendChild(EFFORT)
-    ARTICLE.appendChild(BREAK)
-  }
-  section3.appendChild(ARTICLE)
-}
-
-
-//🔥 this is what makes the text box cahnges between topics🔥 
-  const BUTTON1 = document.getElementById("general")
-  const BUTTON2 = document.getElementById("stats")
-  const BUTTON3 = document.getElementById("abilites")
-
-  BUTTON1.textContent = "General";
-  BUTTON2.textContent = "Abilities";
-  BUTTON3.textContent = "Stats";
-
-document.getElementById("img").height = "490";
-document.getElementById("img").width = "540";
-
-
-let charmeleon = document.createElement("img");
-charmeleon.src = "media/charmeleon.png";
-charmeleon.height = "200";
-charmeleon.width = "220";
-section4.appendChild(charmeleon);
-
-let charizard = document.createElement("img");
-charizard.src = "media/charizard.png";
-charizard.height = "200";
-charizard.width = "190";
-section4.appendChild(charizard);
-*/
+links.appendChild(textLevel2);
+links.appendChild(link2);
