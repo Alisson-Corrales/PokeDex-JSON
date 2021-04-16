@@ -6,7 +6,7 @@
 >
 > We will create a website using JavaScript, HTML, SCSS
 >
-> We want to make the PokeDex look like an actual PokeDex
+> ~~We want to make the PokeDex look like an actual PokeDex~~
 >
 > Most of the HTML present on the pages (excluding the landing page) will be made with JS
 
@@ -140,6 +140,20 @@ ________________________________________________________________________________
 > - `might make a navbar`
 
 ____________________________________________________________________________________________
+
+#### Day 5
+
+#### 4/16/2021
+
+> - Added SCSS file for Chameleon
+>
+> - Added new image for Charmeleon as pervious was not transparent
+>
+> - Fixed a few merge errors 
+>
+>- Figuing out how to swicth between pages using 1 JavaScript file
+
+_________________________________________________________________________________________
 
 ## Credits
 
