@@ -19,7 +19,7 @@ body{
 #grid{
     display: flex;
     flex-wrap: nowrap;
-    background-color: $charmander;
+    background-color: $charmeleon;
     border-radius: 5%;
     padding: 5%;
     margin: 1.5%;
@@ -39,7 +39,7 @@ body{
 }
 
 #imageAndName{
-    background-color: $charman-insides;
+    background-color: $charmel-insides;
     padding: 2rem;
     border-radius: 10%;
 }
@@ -47,12 +47,12 @@ body{
 #generalAbilities{
     display: flex;
     align-items: center;
-    background-color: $charman-insides;
+    background-color: $charmel-insides;
     border-radius: 10%;
     padding: 2%;
 }
 #stats{
-    background-color: $charman-insides;
+    background-color: $charmel-insides;
     border-radius: 10%;
     padding: 2%;
 }
@@ -62,11 +62,7 @@ body{
     justify-content: center;
     align-items: center;
 
-    background-color: $charman-insides;
+    background-color: $charmel-insides;
     border-radius: 10%;
     padding: 2%;
-}
-
-footer{
-    padding: 1.5%;
 }

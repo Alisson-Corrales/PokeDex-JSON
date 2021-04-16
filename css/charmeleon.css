@@ -10,7 +10,7 @@ body {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  background-color: #fde36d;
+  background-color: #f2b65e;
   border-radius: 5%;
   padding: 5%;
   margin: 1.5%;
@@ -32,7 +32,7 @@ body {
 }
 
 #imageAndName {
-  background-color: #fcf7d9;
+  background-color: #ffedd3;
   padding: 2rem;
   border-radius: 10%;
 }
@@ -44,13 +44,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fcf7d9;
+  background-color: #ffedd3;
   border-radius: 10%;
   padding: 2%;
 }
 
 #stats {
-  background-color: #fcf7d9;
+  background-color: #ffedd3;
   border-radius: 10%;
   padding: 2%;
 }
@@ -69,12 +69,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fcf7d9;
+  background-color: #ffedd3;
   border-radius: 10%;
   padding: 2%;
 }
-
-footer {
-  padding: 1.5%;
-}
-/*# sourceMappingURL=charmander.css.map */
+/*# sourceMappingURL=charmeleon.css.map */
