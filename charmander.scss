@@ -3,10 +3,12 @@
 //colors
 $charmander: #fde36d;
 $charman-insides: rgb(252, 247, 217);
+$glo: rgb(255, 247, 206);
 $charmeleon: #f2b65e;
 $charmel-insides:#ffedd3;
 $charizard: #de553b;
 $chari-insides: #ffd3ca;
+$nav: #558873;
 $general: #ade0cb;
 
 
@@ -24,6 +26,7 @@ body{
     padding: 5%;
     margin: 1.5%;
     grid-gap: 2rem;
+    box-shadow: 10px 10px 25px #345748, 10px 10px 50px $glo inset;
 
     h1{
         font-family: 'Orbitron', sans-serif;
@@ -38,10 +41,50 @@ body{
     }
 }
 
+nav{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5%;
+    width: 100%;
+    background-color: $nav;
+    border: 0;
+    padding: 0;
+    box-shadow: 4px 4px 10px #345748;
+
+    p{
+        text-align: left;
+        padding-left: 5%;
+        margin: 2%;
+        font-size: 2rem;
+        font-family: 'Orbitron', sans-serif;;
+    }
+
+    ul{
+        width: 60%;
+        padding-left: 40%;
+    }
+
+    li{
+        display: inline-flex;
+        justify-content: center;
+        list-style-type: none;
+        text-align: right;
+        padding-left: 5%;
+        padding-right: 6%;
+        margin-top: 2%;
+    }
+    a{
+        color: $charmel-insides;
+        text-decoration: none;
+        padding: 10%;
+    }
+}
+
 #imageAndName{
     background-color: $charman-insides;
     padding: 2rem;
     border-radius: 10%;
+    box-shadow: 2px 2px 20px #745430 inset;
 }
 
 #generalAbilities{
@@ -50,11 +93,13 @@ body{
     background-color: $charman-insides;
     border-radius: 10%;
     padding: 2%;
+    box-shadow: 2px 2px 20px #745430 inset;
 }
 #stats{
     background-color: $charman-insides;
     border-radius: 10%;
     padding: 2%;
+    box-shadow: 2px 2px 20px #745430 inset;
 }
 #links{
     display: flex;
@@ -65,8 +110,11 @@ body{
     background-color: $charman-insides;
     border-radius: 10%;
     padding: 2%;
+    box-shadow: 2px 2px 20px #745430 inset;
 }
 
 footer{
     padding: 1.5%;
+    color: #558873;
+    font-weight: bold;
 }
