@@ -1,6 +1,7 @@
 let input = document.getElementById("demo").innerHTML = "Page path is " + window.location.pathname;
 
-input = input.split("/");
+input = input.split("/")
+input = input.splice(", ");
 
 console.log(input);
 
