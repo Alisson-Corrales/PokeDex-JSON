@@ -78,6 +78,7 @@ let charmander = {
 
 //🔥gets all the elements in the html🔥
 let grid = document.getElementById("charmander");
+let nav = document.getElementById("navbar")
 let imgName = document.getElementById("imageAndName");
 let general = document.getElementById("generalAbilities")
 //let abilities = document.getElementById("abilities")
@@ -100,8 +101,37 @@ console.log(Others)
 //
 //🔥 makes a navbar 🔥
 //
-const NAV = document.createElement("nav");
-const ICON = document.createElement("img")
+const HOME = document.createElement("a")
+const CHARMA = document.createElement("a");
+const CHARMEL = document.createElement("a");
+const CHARI = document.createElement("a");
+const PTAG = document.createElement("p");
+const HOLDER = document.createElement("ul");
+const ITEM1 = document.createElement("li");
+const ITEM2 = document.createElement("li");
+const ITEM3 = document.createElement("li");
+
+HOME.setAttribute("href", "LandingPage.html");
+CHARMA.setAttribute("href", "charmander.html");
+CHARMEL.setAttribute("href", "charmeleon.html");
+CHARI.setAttribute("href", "charizard.html");
+
+HOME.textContent = "PokeDex";
+CHARMA.textContent = "Charmander";
+CHARMEL.textContent = "Charmeleon";
+CHARI.textContent = "Charizard";
+
+PTAG.appendChild(HOME);
+ITEM1.appendChild(CHARMA);
+ITEM2.appendChild(CHARMEL);
+ITEM3.appendChild(CHARI);
+
+HOLDER.appendChild(ITEM1)
+HOLDER.appendChild(ITEM2)
+HOLDER.appendChild(ITEM3)
+
+nav.appendChild(PTAG);
+nav.appendChild(HOLDER);
 
 
 //

@@ -15,6 +15,8 @@ body {
   padding: 5%;
   margin: 1.5%;
   grid-gap: 2rem;
+  -webkit-box-shadow: 10px 10px 25px #2e4b2d;
+          box-shadow: 10px 10px 25px #2e4b2d;
 }
 
 #grid h1 {
@@ -31,10 +33,59 @@ body {
   list-style-type: none;
 }
 
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1.5%;
+  width: 100%;
+  background-color: #558873;
+  border: 0;
+  padding: 0;
+}
+
+nav p {
+  text-align: left;
+  padding-left: 5%;
+  margin: 2%;
+  font-size: 2rem;
+  font-family: 'Orbitron', sans-serif;
+}
+
+nav ul {
+  width: 60%;
+  padding-left: 40%;
+}
+
+nav li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  text-align: right;
+  padding-left: 5%;
+  padding-right: 6%;
+  margin-top: 2%;
+}
+
+nav a {
+  color: #ffedd3;
+  text-decoration: none;
+  padding: 10%;
+}
+
 #imageAndName {
   background-color: #fcf7d9;
   padding: 2rem;
   border-radius: 10%;
+  -webkit-box-shadow: 2px 2px 20px #745430 inset;
+          box-shadow: 2px 2px 20px #745430 inset;
 }
 
 #generalAbilities {
@@ -47,12 +98,16 @@ body {
   background-color: #fcf7d9;
   border-radius: 10%;
   padding: 2%;
+  -webkit-box-shadow: 2px 2px 20px #745430 inset;
+          box-shadow: 2px 2px 20px #745430 inset;
 }
 
 #stats {
   background-color: #fcf7d9;
   border-radius: 10%;
   padding: 2%;
+  -webkit-box-shadow: 2px 2px 20px #745430 inset;
+          box-shadow: 2px 2px 20px #745430 inset;
 }
 
 #links {
@@ -72,6 +127,8 @@ body {
   background-color: #fcf7d9;
   border-radius: 10%;
   padding: 2%;
+  -webkit-box-shadow: 2px 2px 20px #745430 inset;
+          box-shadow: 2px 2px 20px #745430 inset;
 }
 
 footer {
