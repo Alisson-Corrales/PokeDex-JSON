@@ -152,6 +152,8 @@ ________________________________________________________________________________
 > - Fixed a few merge errors 
 >
 >- Figuing out how to swicth between pages using 1 JavaScript file
+>
+> - Fixing error and misc.
 
 _________________________________________________________________________________________
 
