@@ -153,6 +153,12 @@ ________________________________________________________________________________
 >
 >- Figuing out how to swicth between pages using 1 JavaScript file
 
+>AC:
+>
+> - made navbar, finished
+>
+> - made a few changes for a cleaner moe finished look
+
 _________________________________________________________________________________________
 
 ## Credits
