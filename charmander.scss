@@ -3,7 +3,7 @@
 //colors
 $charmander: #fde36d;
 $charman-insides: rgb(252, 247, 217);
-$glo: rgb(255, 253, 241);
+$glo: rgb(255, 247, 206);
 $charmeleon: #f2b65e;
 $charmel-insides:#ffedd3;
 $charizard: #de553b;
@@ -26,7 +26,7 @@ body{
     padding: 5%;
     margin: 1.5%;
     grid-gap: 2rem;
-    box-shadow: 10px 10px 25px #2e4b2d;
+    box-shadow: 10px 10px 25px #345748, 10px 10px 50px $glo inset;
 
     h1{
         font-family: 'Orbitron', sans-serif;
@@ -49,6 +49,7 @@ nav{
     background-color: $nav;
     border: 0;
     padding: 0;
+    box-shadow: 4px 4px 10px #345748;
 
     p{
         text-align: left;
@@ -114,4 +115,6 @@ nav{
 
 footer{
     padding: 1.5%;
+    color: #558873;
+    font-weight: bold;
 }
