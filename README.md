@@ -157,6 +157,22 @@ ________________________________________________________________________________
 
 _________________________________________________________________________________________
 
+#### Day 6
+
+#### 4/19/2021
+
+> - trying to finsih JavaScript, mainly,  
+> - Swiching inputs depending on current page
+>
+
+#### Issues we Encounterd
+
+> - merge conflicts
+>
+> - ~~functions not runing properly in javascript~~
+
+__________________________________________________________________________________
+
 ## Credits
 
 > [Charmeleon Image](https://www.google.com/url?sa=i&url=https%3A%2F%2Far.pinterest.com%2Fpin%2F516999232228791711%2F&psig=AOvVaw0ApBkO7I_DWegNPuqhOTvm&ust=1618702353880000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOig-6r2g_ACFQAAAAAdAAAAABAD)  
