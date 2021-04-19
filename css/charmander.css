@@ -5,18 +5,14 @@ body {
 }
 
 #grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   background-color: #fde36d;
   border-radius: 5%;
   padding: 5%;
   margin: 1.5%;
   grid-gap: 2rem;
-  -webkit-box-shadow: 10px 10px 25px #2e4b2d;
-          box-shadow: 10px 10px 25px #2e4b2d;
+  box-shadow: 10px 10px 25px #345748, 10px 10px 50px #fff7ce inset;
 }
 
 #grid h1 {
@@ -34,17 +30,14 @@ body {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-top: 1.5%;
   width: 100%;
   background-color: #558873;
   border: 0;
   padding: 0;
+  box-shadow: 4px 4px 10px #345748;
 }
 
 nav p {
@@ -61,12 +54,8 @@ nav ul {
 }
 
 nav li {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   list-style-type: none;
   text-align: right;
   padding-left: 5%;
@@ -84,54 +73,273 @@ nav a {
   background-color: #fcf7d9;
   padding: 2rem;
   border-radius: 10%;
-  -webkit-box-shadow: 2px 2px 20px #745430 inset;
-          box-shadow: 2px 2px 20px #745430 inset;
+  box-shadow: 2px 2px 20px #745430 inset;
 }
 
 #generalAbilities {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #fcf7d9;
   border-radius: 10%;
   padding: 2%;
-  -webkit-box-shadow: 2px 2px 20px #745430 inset;
-          box-shadow: 2px 2px 20px #745430 inset;
+  box-shadow: 2px 2px 20px #745430 inset;
 }
 
 #stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fcf7d9;
   border-radius: 10%;
   padding: 2%;
-  -webkit-box-shadow: 2px 2px 20px #745430 inset;
-          box-shadow: 2px 2px 20px #745430 inset;
+  box-shadow: 2px 2px 20px #745430 inset;
 }
 
 #links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #fcf7d9;
   border-radius: 10%;
   padding: 2%;
-  -webkit-box-shadow: 2px 2px 20px #745430 inset;
-          box-shadow: 2px 2px 20px #745430 inset;
+  box-shadow: 2px 2px 20px #745430 inset;
 }
 
 footer {
   padding: 1.5%;
+  color: #558873;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    justify-content: initial;
+    height: 5%;
+    box-shadow: 0px 4px 10px #345748;
+  }
+  nav p {
+    padding-left: 23%;
+  }
+  nav ul {
+    display: none;
+  }
+  #grid {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    margin: 0;
+    margin-top: 5%;
+  }
+  #imageAndName h1 {
+    font-size: 200%;
+  }
+  #imageAndName img {
+    height: 90%;
+    width: 110%;
+  }
+  #generalAbilities {
+    padding: 4%;
+  }
+  #stats {
+    padding: 4%;
+  }
+  #links {
+    padding: 4%;
+  }
+}
+
+footer {
+  padding: 1%;
+  font-size: 90%;
+}
+
+@media screen and (max-width: 414px) {
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    justify-content: initial;
+    height: 5%;
+    box-shadow: 0px 4px 10px #345748;
+  }
+  nav p {
+    padding-left: 23%;
+  }
+  nav ul {
+    display: none;
+  }
+  #grid {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    margin: 0;
+    margin-top: 5%;
+  }
+  #imageAndName h1 {
+    font-size: 200%;
+  }
+  #imageAndName img {
+    height: 90%;
+    width: 110%;
+  }
+  #generalAbilities {
+    padding: 4%;
+  }
+  #stats {
+    padding: 4%;
+  }
+  #links {
+    padding: 4%;
+  }
+  footer {
+    padding: 1%;
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    justify-content: initial;
+    height: 5%;
+    box-shadow: 0px 4px 10px #345748;
+  }
+  nav p {
+    padding-left: 23%;
+  }
+  nav ul {
+    display: none;
+  }
+  #grid {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    margin: 0;
+    margin-top: 5%;
+  }
+  #imageAndName h1 {
+    font-size: 200%;
+  }
+  #imageAndName img {
+    height: 90%;
+    width: 110%;
+  }
+  #generalAbilities {
+    padding: 4%;
+  }
+  #stats {
+    padding: 4%;
+  }
+  #links {
+    padding: 4%;
+  }
+  footer {
+    padding: 1%;
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  nav p {
+    padding-left: 20%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    justify-content: initial;
+    height: 5%;
+    box-shadow: 0px 4px 10px #345748;
+  }
+  nav p {
+    padding-left: 23%;
+  }
+  nav ul {
+    display: none;
+  }
+  #grid {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    margin: 0;
+    margin-top: 5%;
+  }
+  #imageAndName h1 {
+    font-size: 150%;
+  }
+  #imageAndName img {
+    height: 90%;
+    width: 110%;
+  }
+  #generalAbilities {
+    padding: 4%;
+  }
+  #stats {
+    padding: 4%;
+  }
+  #links {
+    padding: 4%;
+  }
+  footer {
+    padding: 1%;
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 285px) {
+  #imageAndName h1 {
+    font-size: 180%;
+  }
+  nav p {
+    padding-left: 20%;
+  }
+}
+
+@media screen and (max-width: 265px) {
+  #imageAndName h1 {
+    font-size: 150%;
+  }
+  nav p {
+    padding-left: 10%;
+  }
+}
+
+@media screen and (max-width: 235px) {
+  #imageAndName h1 {
+    font-size: 130%;
+  }
+  nav p {
+    padding-left: 5%;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  #imageAndName {
+    align-items: center;
+  }
+  #imageAndName h1 {
+    font-size: 90%;
+  }
+  nav p {
+    padding-left: 2%;
+  }
 }
 /*# sourceMappingURL=charmander.css.map */

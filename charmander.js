@@ -76,8 +76,6 @@ let charmander = {
 
 
 
-
-
 //🔥gets all the elements in the html🔥
 let grid = document.getElementById("charmander");
 let nav = document.getElementById("navbar")
