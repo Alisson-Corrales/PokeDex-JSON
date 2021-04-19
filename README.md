@@ -152,6 +152,8 @@ ________________________________________________________________________________
 > - Fixed a few merge errors 
 >
 >- Figuing out how to swicth between pages using 1 JavaScript file
+>
+> - Fixing error and misc.
 
 >AC:
 >
@@ -160,6 +162,22 @@ ________________________________________________________________________________
 > - made a few changes for a cleaner moe finished look
 
 _________________________________________________________________________________________
+
+#### Day 6
+
+#### 4/19/2021
+
+> - trying to finsih JavaScript, mainly,  
+> - Swiching inputs depending on current page
+>
+
+#### Issues we Encounterd
+
+> - merge conflicts
+>
+> - ~~functions not runing properly in javascript~~
+
+__________________________________________________________________________________
 
 ## Credits
 
