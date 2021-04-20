@@ -3,6 +3,7 @@
 //colors
 $charmander: #fde36d;
 $charman-insides: rgb(252, 247, 217);
+$shadow: #745430;
 $glo: rgb(255, 247, 206);
 $charmeleon: #f2b65e;
 $charmel-insides:#ffedd3;
@@ -11,6 +12,9 @@ $chari-insides: #ffd3ca;
 $nav: #558873;
 $general: #ade0cb;
 
+html{
+    cursor: url("images/cursor.png");
+}
 
 body{
     background-color: $general;
@@ -26,7 +30,7 @@ body{
     padding: 5%;
     margin: 1.5%;
     grid-gap: 2rem;
-    box-shadow: 10px 10px 25px #345748, 10px 10px 50px $glo inset;
+    box-shadow: 10px 10px 25px #345748, 5px 5px 45px $glo inset;;
 
     h1{
         font-family: 'Orbitron', sans-serif;
@@ -58,7 +62,6 @@ nav{
         font-size: 2rem;
         font-family: 'Orbitron', sans-serif;;
     }
-
     ul{
         width: 60%;
         padding-left: 40%;
@@ -94,7 +97,7 @@ nav{
     background-color: $charman-insides;
     border-radius: 10%;
     padding: 2%;
-    box-shadow: 2px 2px 20px #745430 inset;
+    box-shadow: 2px 2px 20px $shadow inset;
 }
 #stats{
     display: flex;
@@ -103,7 +106,7 @@ nav{
     background-color: $charman-insides;
     border-radius: 10%;
     padding: 2%;
-    box-shadow: 2px 2px 20px #745430 inset;
+    box-shadow: 2px 2px 20px $shadow inset;
 }
 #links{
     display: flex;
@@ -114,7 +117,7 @@ nav{
     background-color: $charman-insides;
     border-radius: 10%;
     padding: 2%;
-    box-shadow: 2px 2px 20px #745430 inset;
+    box-shadow: 2px 2px 20px $shadow inset;
 }
 
 footer{

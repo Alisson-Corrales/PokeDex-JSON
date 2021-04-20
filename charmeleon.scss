@@ -3,10 +3,13 @@
 //colors
 $charmander: #fde36d;
 $charman-insides: rgb(252, 247, 217);
+$shadow: #745430;
+$glo: rgb(255, 247, 206);
 $charmeleon: #f2b65e;
 $charmel-insides:#ffedd3;
 $charizard: #de553b;
 $chari-insides: #ffd3ca;
+$nav: #558873;
 $general: #ade0cb;
 
 
@@ -14,6 +17,45 @@ body{
     background-color: $general;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5%;
+    width: 100%;
+    background-color: $nav;
+    border: 0;
+    padding: 0;
+    box-shadow: 4px 4px 10px #345748;
+
+    p{
+        text-align: left;
+        padding-left: 5%;
+        margin: 2%;
+        font-size: 2rem;
+        font-family: 'Orbitron', sans-serif;;
+    }
+
+    ul{
+        width: 60%;
+        padding-left: 40%;
+    }
+
+    li{
+        display: inline-flex;
+        justify-content: center;
+        list-style-type: none;
+        text-align: right;
+        padding-left: 5%;
+        padding-right: 6%;
+        margin-top: 2%;
+    }
+    a{
+        color: $charmel-insides;
+        text-decoration: none;
+        padding: 10%;
+    }
 }
 
 #grid{
@@ -24,6 +66,7 @@ body{
     padding: 5%;
     margin: 1.5%;
     grid-gap: 2rem;
+    box-shadow: 10px 10px 25px #345748, 5px 5px 45px $glo inset;
 
     h1{
         font-family: 'Orbitron', sans-serif;
@@ -42,19 +85,25 @@ body{
     background-color: $charmel-insides;
     padding: 2rem;
     border-radius: 10%;
+    box-shadow: 2px 2px 20px $shadow inset;
 }
-
 #generalAbilities{
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: $charmel-insides;
     border-radius: 10%;
     padding: 2%;
+    box-shadow: 2px 2px 20px $shadow inset;
 }
 #stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $charmel-insides;
     border-radius: 10%;
     padding: 2%;
+    box-shadow: 2px 2px 20px $shadow inset;
 }
 #links{
     display: flex;
@@ -65,4 +114,277 @@ body{
     background-color: $charmel-insides;
     border-radius: 10%;
     padding: 2%;
+    box-shadow: 2px 2px 20px $shadow inset;
+}
+
+footer{
+    padding: 1.5%;
+    color: #558873;
+    font-weight: bold;
+}
+
+
+//responsive design stuff
+@media screen and (max-width: 1100px){
+    nav{
+        justify-content: initial;
+        height: 5%;
+        box-shadow: 0px 4px 10px #345748;
+        p{
+            padding-left: 23%;
+        }
+        ul{
+            display: none;
+        }
+    }
+    #grid{
+        display: flex;
+        flex-direction: row;
+        padding: 2%;
+        margin: 0;
+        margin-top: 5%;
+    }
+    #imageAndName{
+        //padding: 4%;
+        h1{
+            font-size: 200%;
+        }
+        img{
+            height: 40%;
+            width: 110%;
+        }
+    }
+
+    #generalAbilities{
+        padding: 4%;
+    }
+    #stats{
+        padding: 4%;
+    }
+    #links{
+        padding: 4%;
+    }
+
+    footer{
+        padding: 1%;
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 414px){
+    body{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+    nav{
+        justify-content: initial;
+        height: 5%;
+        box-shadow: 0px 4px 10px #345748;
+        p{
+            padding-left: 23%;
+        }
+        ul{
+            display: none;
+        }
+    }
+    #grid{
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        margin: 0;
+        margin-top: 5%;
+    }
+    #imageAndName{
+        //padding: 4%;
+        h1{
+            font-size: 200%;
+        }
+        img{
+            height: 90%;
+            width: 110%;
+        }
+    }
+
+    #generalAbilities{
+        padding: 4%;
+    }
+    #stats{
+        padding: 4%;
+    }
+    #links{
+        padding: 4%;
+    }
+
+    footer{
+    padding: 1%;
+    font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    body{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+    nav{
+        justify-content: initial;
+        height: 5%;
+        box-shadow: 0px 4px 10px #345748;
+        p{
+            padding-left: 23%;
+        }
+        ul{
+            display: none;
+        }
+    }
+    #grid{
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        margin: 0;
+        margin-top: 5%;
+    }
+    #imageAndName{
+        //padding: 4%;
+        h1{
+            font-size: 200%;
+        }
+        img{
+            height: 90%;
+            width: 110%;
+        }
+    }
+
+    #generalAbilities{
+        padding: 4%;
+    }
+    #stats{
+        padding: 4%;
+    }
+    #links{
+        padding: 4%;
+    }
+
+    footer{
+        padding: 1%;
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    nav{
+        p{
+            padding-left: 20%;
+        }
+    }
+}
+
+@media screen and (max-width: 375px){
+    body{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+    nav{
+        justify-content: initial;
+        height: 5%;
+        box-shadow: 0px 4px 10px #345748;
+        p{
+            padding-left: 23%;
+        }
+        ul{
+            display: none;
+        }
+    }
+    #grid{
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        margin: 0;
+        margin-top: 5%;
+    }
+    #imageAndName{
+        h1{
+            font-size: 150%;
+        }
+        img{
+            height: 90%;
+            width: 110%;
+        }
+    }
+
+    #generalAbilities{
+        padding: 4%;
+    }
+    #stats{
+        padding: 4%;
+    }
+    #links{
+        padding: 4%;
+    }
+
+    footer{
+        padding: 1%;
+        font-size: 90%;
+    }
+
+}
+
+@media screen and (max-width: 285px){
+    #imageAndName{
+        h1{
+            font-size: 180%;
+        }
+    }
+    nav{
+        p{
+            padding-left: 20%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 265px){
+    #imageAndName{
+        h1{
+            font-size: 150%;
+        }
+    }
+    nav{
+        p{
+            padding-left: 10%;
+        }
+    }
+}
+
+@media screen and (max-width: 235px){
+    #imageAndName{
+        h1{
+            font-size: 130%;
+        }
+    }
+    nav{
+        p{
+            padding-left: 5%;
+        }
+    }
+}
+
+@media screen and (max-width: 200px){
+    #imageAndName{
+        align-items: center;
+        h1{
+            font-size: 90%;
+        }
+    }
+    nav{
+        p{
+            padding-left: 2%;
+        }
+    }
 }
