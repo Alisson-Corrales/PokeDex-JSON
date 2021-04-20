@@ -15,13 +15,15 @@
 |    Name  |   Task               |
 | :----:   | :----:               |
 | Alisson  | HTML / JS / SCSS     |
-| Samuel   | HTML / JS / CSS      |
+| Samuel   | HTML / JS / SCSS     |
 | Daniel   | JS / SCSS / HTML     |
 | Fernando | MarkDown / HTML / JS |
 
 #### Features
 
-- The buttons on the PokeDex will switch betweens pages
+- ~~The buttons on the PokeDex will switch betweens pages~~  
+
+- The images on the right are links to the coesponding pokemon  
 
 
 #### What will the JS file do?
@@ -170,10 +172,13 @@ ________________________________________________________________________________
 > - trying to finsih JavaScript, mainly,  
 > - Swiching inputs depending on current page
 >
+> - Completed JavaScript
+>
+> - Fully functional website 
 
 #### Issues we Encounterd
 
-> - merge conflicts
+> - ~~merge conflicts~~
 >
 > - ~~functions not runing properly in javascript~~
 
